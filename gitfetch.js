@@ -51,7 +51,8 @@ async function fetchGitHubData(username, linkedinID) {
 
 // : Fetch GitHub data for multiple usernames with LinkedIn IDs add your git hub username and linkedin user id
 const profiles = [
-    {githubUsername:'boltjazz', linkedinID: 'boltjazz'}
+    {githubUsername:'boltjazz', linkedinID: 'boltjazz'},
+    {githubUsername:"Aryainguz",linkedinID:"aryan-inguz-b73150254"}
     
     // Add more profiles as needed
 ];
