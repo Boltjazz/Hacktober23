@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,600;0,700;0,800;1,800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Martian+Mono:wght@300;400&family=Space+Mono:wght@400;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+  }
+/* .bg {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: 300% 300%;
+    background-image: linear-gradient(-45deg, #E92EFB 0%, #FF2079 25%, #04005E 51%, #440B04 100%);
+    -webkit-animation: AnimateBG 20s ease infinite;
+    animation: AnimateBG 20s ease infinite;
+  } */
+  .bg {
+    width: 100%;
+    min-height: 100vh; /* Use min-height instead of height , intna to rahe hi baki jitna ho jaaye */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: 300% 300%;
+    background-image: linear-gradient(-45deg, #E92EFB 0%, #FF2079 25%, #e074e0 51%, #440B04 100%);
+    -webkit-animation: AnimateBG 20s ease infinite;
+    animation: AnimateBG 20s ease infinite;
+    position: fixed; /* Keep the background fixed , jaane nahi deena hai*/
+    top: 0;
+    left: 0;
+    z-index: -1; /* To Place it below other content , neeche to deekho*/
+}
+.viewport {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+  @-webkit-keyframes AnimateBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  @keyframes AnimateBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  #logo {
+    width: 20vw; 
+    height: 10vh; 
+    position: absolute;
+    top: 10px; 
+    left: 10px;
+}
+.github {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    z-index: 9999;
+  }
+  .github a {
+    text-decoration: none;
+    color: #000; 
+  }
+  /* .title{ ye wala original hai
+    width: 50%;
+    margin:auto;
+    padding-left:0px;
+    padding-bottom:0px;
+  } */
+  .title {
+    display: block;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+  h1{
+    /* font-family: JetBrains Mono,monospace; */
+    font-family: Martian Mono,monospace;
+    color:white;
+    font-weight: 900;
+    font-size:35px;
+    line-height:90%;
+    padding-bottom:5px;
+    padding-top: 89px;
+    position:relative;
+    text-align:center;
+  }
+  h2{
+    font-family: JetBrains Mono,monospace;
+    color:white;
+    font-weight: 600;
+    font-size:35px;
+    position:relative;
+    text-align:center;
+  }
+  
+  
+  
+/* Style for the card container, jo bhi deen chaaye globally  */
+:root {
+    --card-bg-color: #fff; /* Default card background color */
+    --card-text-color: #333; /* Default text color */
+    --card-font-family: Arial, sans-serif; /* Default font family */
+}
+/* .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+} */
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 180px;
+  position: relative;
+  z-index: 1;
+  /* background-color: rgba(255, 255, 255, 0.1); */
+  backdrop-filter: blur(10px);
+  opacity: 0.9;
+  margin-bottom: 20px; /* Add margin at the bottom to separate from the footer , lag hi nahi raha footer*/
+}
+
+.card {
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 0 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--card-text-color); 
+    font-family: var(--card-font-family);
+    backdrop-filter: blur(10px);
+    opacity: 0.9; /* Adjust opacity for the glass effect */
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Change to the desired hover background color meeri marzi */
+  transform: scale(1.05); /* Increase the size of the card on hover karna hin nahi  */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow on hover  background se dikh hi ni ra*/
+}
+
+/* Style for the person's name  naam likhoo*/
+.name {
+    font-family: lato;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Style for the profile picture auto*/
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+/* Style for the links */
+.links {
+    margin-top: 10px;
+}
+
+/* Style for GitHub and LinkedIn links */
+.links a {
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #007BFF; 
+}
+
+/* Hover effect for links */
+.links a:hover {
+    text-decoration: underline;
+}
