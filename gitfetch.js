@@ -53,6 +53,7 @@ async function fetchGitHubData(username, linkedinID) {
 const profiles = [
     {githubUsername:'boltjazz', linkedinID: 'boltjazz'},
     {githubUsername:'Rishabh0097', linkedinID: 'rishabh-kumar-7a762928a'},
+    {githubUsername:'DomeT99', linkedinID: 'domenico-tenace'},
     
     // Add more profiles as needed
 ];
