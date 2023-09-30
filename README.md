@@ -7,6 +7,10 @@
 
 🎯 Sign up for Hacktober, Learn and contribut towards Open Source, Fork repos make pull requests etc, and win digital swags and get a tree planted 🎄
 
+🎆 Open Sorcery Hacktoberfest 2023: Contribute to open source, learn. Beginner-friendly. Explore issues, fork, code, and make a global impact. Let's collaborate!
+
+🎐 Submit your first contribution to a participating project to get started with Hacktoberfest2023!
+
 # [Register For Hacktoberfest 2023](https://hacktoberfest.com/participation/) 👈
 
 # Task 1.0 `Initiation`
@@ -37,6 +41,3 @@
 - Wait for the request to be accepted or contact me
 
 - Star this repository 
-
-
-
