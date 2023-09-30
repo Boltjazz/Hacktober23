@@ -40,4 +40,12 @@
 
 - Wait for the request to be accepted or contact me
 
-- Star this repository 
+- Star this repository
+
+# 🔥2023 Wizards🧙‍♂️
+  <div align="center">
+   
+   <a href="https://github.com/Boltjazz/Hacktober23/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Boltjazz/Hacktober23" />
+</a>
+  </div>
