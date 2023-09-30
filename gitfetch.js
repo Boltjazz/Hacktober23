@@ -54,6 +54,7 @@ const profiles = [
     {githubUsername:'boltjazz', linkedinID: 'boltjazz'},
     {githubUsername:'Rishabh0097', linkedinID: 'rishabh-kumar-7a762928a'},
     {githubUsername:'DomeT99', linkedinID: 'domenico-tenace'},
+    {githubUsername:'adityagupta19', linkedinID: 'adityagupta11219'},
     
     // Add more profiles as needed
 ];
@@ -71,8 +72,7 @@ profiles.forEach(profile => {
 //         if (!response.ok) {
 //             throw new Error('GitHub API request failed');
 //         }
-//         const data = await response.json();
-        
+//         const data = await response.json();    
 //         // Create a card for the user
 //         const card = document.createElement('div');
 //         card.className = 'card';
@@ -90,7 +90,6 @@ profiles.forEach(profile => {
 //         alert('Failed to fetch GitHub data for ' + username);
 //     }
 // }
-
 // // Example: Fetch GitHub data for multiple usernames
 // const githubUsernames = ['boltjazz', 'user2', 'user3']; // Replace with desired usernames
 // githubUsernames.forEach(username => fetchGitHubData(username));

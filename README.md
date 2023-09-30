@@ -20,9 +20,12 @@
 
  - Fork this Repository using the button at the top on right corner.
 
-  ![img_fork](https://github.com/Boltjazz/Hacktober23/assets/110303755/c342820b-2c10-46f3-94d4-c202b79052df)
+   ![img_fork](https://github.com/syed7086/Hacktober23/assets/85676664/228965f8-6d47-47c1-895c-f932bd1533a3)
+
 
  - Clone this repo to you local Machine `git clone https://github.com/Boltjazz/Hacktober23.git`
+
+    ![img_fork](https://github.com/Boltjazz/Hacktober23/assets/110303755/c342820b-2c10-46f3-94d4-c202b79052df)
 
  - Carve your own path with a new branch for your modifications and you can also do google search of how to push and open pull requests, this is a learning process (ie. `git branch new-user` or simply do `git checkout -b new-user`, Check all branches `git branch` to see all branches)
   
