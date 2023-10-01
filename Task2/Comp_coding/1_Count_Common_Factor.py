@@ -1,13 +1,17 @@
-#This problem is asked in one of the HackerEarth contests.
+def count_common_factors(a, b):
+    # Initialize a counter variable to keep track of the number of common factors
+    count = 0
+    # Iterate over all possible factors of a and b
+    for i in range(1, min(a, b)+1):
+        # If i is a factor of both a and b, increment the counter
+        if a % i == 0 and b % i == 0:
+            count += 1
+    # Return the final count of common factors
+    return count
 
-#Problem Statement: Little Robert likes mathematics. Today his teacher has given him two integers and asked him to find out how many integers can divide both the numbers. Would you like to help him in completing his school assignment?
+# Prompt the user to enter two numbers
+a = int(input("Enter the first number: "))
+b = int(input("Enter the second number: "))
 
-#Input Formatting: There are two integers, a and b as input to the program.
-
-#Output Formatting: Print the number of common factors of a and b. Both the input value should be in a range of 1 to 10^12.
-
-#Example:
-
-#Input: 10 15
-#Output: 2
-#-------------------------------------------------
+# Call the count_common_factors function with the user's input and print the result
+print("The number of common factors are: ", count_common_factors(a, b))
