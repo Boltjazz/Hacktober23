@@ -47,10 +47,16 @@
 
 - Star this repository
 
+
+## Do checkout Task 2 
+
+- Read the md file for instructions , Enjoy the process.
+
+
 # 🔥2023 Wizards🧙‍♂️
   <div align="center">
    
    <a href="https://github.com/Boltjazz/Hacktober23/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Boltjazz/Hacktober23" />
+  <img src="https://contrib.rocks/image?repo=boltjazz/Hacktober23" />
 </a>
   </div>
