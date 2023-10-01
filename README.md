@@ -3,7 +3,7 @@
 
 # World of Open Sorcery Awaits! 🗺️🧙‍♂️
 
-☄🌠 This year Makrks the 10th anniversary of Hacktoberfest, and we all can Celebrate🎉
+☄🌠 This year Marks the 10th anniversary of Hacktoberfest, and we all can Celebrate🎉
 
 🎯 Sign up for Hacktober, Learn and contribut towards Open Source, Fork repos make pull requests etc, and win digital swags and get a tree planted 🎄
 
@@ -38,6 +38,8 @@
  - The 🧙‍♂️ wizard once said `If it works Don't touch it` 😐
 
  - Now just use either the Gui interface of `vscode` or `git teminal` for commiting changes `git add .`, `git commit -m "Hacking Wizards"`, the `git push origin ` `main or new-user`
+
+ - Before creating a pull request check if your forked branch is behind the main, update your branch
 
 - Create a pull request
 
