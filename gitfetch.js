@@ -11,51 +11,57 @@ const linkedinIcon = `
 `;
 // Function to add a user profile with GitHub username and LinkedIn ID
 function addProfile() {
-    const githubUsername = document.getElementById('githubUsername').value;
-    const linkedinID = document.getElementById('linkedinID').value;
+	const githubUsername = document.getElementById("githubUsername").value;
+	const linkedinID = document.getElementById("linkedinID").value;
 
-    // Check if both GitHub username and LinkedIn ID are provided
-    if (githubUsername && linkedinID) {
-        fetchGitHubData(githubUsername, linkedinID);
-    } else {
-        alert('Please enter both GitHub username and LinkedIn ID.');
-    }
+	// Check if both GitHub username and LinkedIn ID are provided
+	if (githubUsername && linkedinID) {
+		fetchGitHubData(githubUsername, linkedinID);
+	} else {
+		alert("Please enter both GitHub username and LinkedIn ID.");
+	}
 }
 
 // Function to fetch and display GitHub user data
 async function fetchGitHubData(username, linkedinID) {
-    try {
-        const response = await fetch(`https://api.github.com/users/${username}`);
-        if (!response.ok) {
-            throw new Error('GitHub API request failed');
-        }
-        const data = await response.json();
+	try {
+		const response = await fetch(`https://api.github.com/users/${username}`);
+		if (!response.ok) {
+			throw new Error("GitHub API request failed");
+		}
+		const data = await response.json();
 
-        // Create a card for the user
-        const card = document.createElement('div');
-        card.className = 'card';
-        card.innerHTML = `
-            <img class="profile-pic" src="${data.avatar_url}" alt="Profile Picture">
+		// Create a card for the user
+		const card = document.createElement("div");
+		card.className = "card";
+		card.innerHTML = `
+            <img class="profile-pic" src="${
+							data.avatar_url
+						}" alt="Profile Picture">
             <div class="name">${data.name || username}</div>
             <div class="links">
                 <a href="${data.html_url}" target="_blank">${githubIcon}</a>
                 <a href="https://www.linkedin.com/in/${linkedinID}" target="_blank">${linkedinIcon}</a>
             </div>
         `;
-        document.getElementById('profileContainer').appendChild(card);
-    } catch (error) {
-        console.error(error);
-        alert('Failed to fetch GitHub data for ' + username);
-    }
+		document.getElementById("profileContainer").appendChild(card);
+	} catch (error) {
+		console.error(error);
+		alert("Failed to fetch GitHub data for " + username);
+	}
 }
 
 // : Fetch GitHub data for multiple usernames with LinkedIn IDs add your git hub username and linkedin user id
 const profiles = [
-    {githubUsername:'boltjazz', linkedinID: 'boltjazz'},
-    {githubUsername:'Rishabh0097', linkedinID: 'rishabh-kumar-7a762928a'},
-    {githubUsername:'DomeT99', linkedinID: 'domenico-tenace'},
-    {githubUsername:'adityagupta19', linkedinID: 'adityagupta11219'},
-    {githubUsername:'Ananyasingh2002', linkedinID: 'ananya-singh-29b304224'},
+
+	{ githubUsername: "boltjazz", linkedinID: "boltjazz" },
+	{ githubUsername: "Rishabh0097", linkedinID: "rishabh-kumar-7a762928a" },
+	{ githubUsername: "DomeT99", linkedinID: "domenico-tenace" },
+	{ githubUsername: "adityagupta19", linkedinID: "adityagupta11219" },
+	{ githubUsername: "Ananyasingh2002", linkedinID: "ananya-singh-29b304224" },
+	
+	// Add more profiles as needed
+  {	githubUsername: "chrishenderson07",linkedinID: "christopher-henderson-633495241"},
   
   
   
@@ -68,15 +74,12 @@ const profiles = [
     {githubUsername:'bkpecho', linkedinID: 'bkpecho'},
 
 
-    
-    // Add more profiles as needed
+
 ];
 
-profiles.forEach(profile => {
-    fetchGitHubData(profile.githubUsername, profile.linkedinID);
+profiles.forEach((profile) => {
+	fetchGitHubData(profile.githubUsername, profile.linkedinID);
 });
-
-
 
 // Function to fetch and display GitHub user data
 // async function fetchGitHubData(username) {
@@ -85,7 +88,7 @@ profiles.forEach(profile => {
 //         if (!response.ok) {
 //             throw new Error('GitHub API request failed');
 //         }
-//         const data = await response.json();    
+//         const data = await response.json();
 //         // Create a card for the user
 //         const card = document.createElement('div');
 //         card.className = 'card';
