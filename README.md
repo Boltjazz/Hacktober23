@@ -3,7 +3,7 @@
 
 # World of Open Sorcery Awaits! 🗺️🧙‍♂️
 
-☄🌠 This year Makrks the 10th anniversary of Hacktoberfest, and we all can Celebrate🎉
+☄🌠 This year Marks the 10th anniversary of Hacktoberfest, and we all can Celebrate🎉
 
 🎯 Sign up for Hacktober, Learn and contribut towards Open Source, Fork repos make pull requests etc, and win digital swags and get a tree planted 🎄
 
