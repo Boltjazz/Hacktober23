@@ -39,6 +39,8 @@
 
  - Now just use either the Gui interface of `vscode` or `git teminal` for commiting changes `git add .`, `git commit -m "Hacking Wizards"`, the `git push origin ` `main or new-user`
 
+ - Before creating a pull request check if your forked branch is behind the main, update your branch
+
 - Create a pull request
 
 - Wait for the request to be accepted or contact me
