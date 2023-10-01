@@ -53,50 +53,22 @@ async function fetchGitHubData(username, linkedinID) {
 
 // : Fetch GitHub data for multiple usernames with LinkedIn IDs add your git hub username and linkedin user id
 const profiles = [
-
     { githubUsername: 'boltjazz', linkedinID: 'boltjazz' },
+    { githubUsername: 'Ananyasingh2002', linkedinID: 'ananya-singh-29b304224' },
     { githubUsername: 'Rishabh0097', linkedinID: 'rishabh-kumar-7a762928a' },
     { githubUsername: 'DomeT99', linkedinID: 'domenico-tenace' },
     { githubUsername: 'adityagupta19', linkedinID: 'adityagupta11219' },
-    { githubUsername: 'Ananyasingh2002', linkedinID: 'ananya-singh-29b304224' },
     { githubUsername: 'digvijaysinghh', linkedinID: 'digvijaysinghh'},
     { githubUsername: "chrishenderson07",linkedinID: "christopher-henderson-633495241"},
     { githubUsername:'Rythm18', linkedinID: 'ridham-khandar-a71841227'},
     { githubUsername:'farukhfrk', linkedinID: 'mahammad-farukh-uddin-aa16381ba'},  
     { githubUsername:'bkpecho', linkedinID: 'bkpecho'},
     { githubUsername: 'Amit41z', linkedinID: 'amit-kumar-ghosh-185165199' },
+    { githubUsername:'SyedSumaimaly', linkedinID: 'syed-sumaim-al'},
           // Add more profiles as needed
+
 ];
 
 profiles.forEach((profile) => {
 	fetchGitHubData(profile.githubUsername, profile.linkedinID);
 });
-
-// Function to fetch and display GitHub user data
-// async function fetchGitHubData(username) {
-//     try {
-//         const response = await fetch(`https://api.github.com/users/${username}`);
-//         if (!response.ok) {
-//             throw new Error('GitHub API request failed');
-//         }
-//         const data = await response.json();
-//         // Create a card for the user
-//         const card = document.createElement('div');
-//         card.className = 'card';
-//         card.innerHTML = `
-//             <img class="profile-pic" src="${data.avatar_url}" alt="Profile Picture">
-//             <div class="name">${data.name || username}</div>
-//             <div class="links">
-//                 <a href="${data.html_url}" target="_blank"> ${githubIcon}</a>
-//                 <a href="https://www.linkedin.com/in/${username}" target="_blank"> ${linkedinIcon}</a>
-//             </div>
-//         `;
-//         document.getElementById('profileContainer').appendChild(card);
-//     } catch (error) {
-//         console.error(error);
-//         alert('Failed to fetch GitHub data for ' + username);
-//     }
-// }
-// // Example: Fetch GitHub data for multiple usernames
-// const githubUsernames = ['boltjazz', 'user2', 'user3']; // Replace with desired usernames
-// githubUsernames.forEach(username => fetchGitHubData(username));
