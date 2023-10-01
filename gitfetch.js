@@ -55,11 +55,12 @@ async function fetchGitHubData(username, linkedinID) {
 const profiles = [
   
     { githubUsername: 'boltjazz', linkedinID: 'boltjazz' },
-    { githubUsername: 'Ananyasingh2002', linkedinID: 'ananya-singh-29b304224' },  
+    { githubUsername: 'Ananyasingh2002', linkedinID: 'ananya-singh-29b304224' },
+    
     { githubUsername: 'Rishabh0097', linkedinID: 'rishabh-kumar-7a762928a' },
     { githubUsername: 'DomeT99', linkedinID: 'domenico-tenace' },
     { githubUsername: 'adityagupta19', linkedinID: 'adityagupta11219' },
-    { githubUsername: 'msami625', linkedinID: 'muhammad-sami-bhat'},
+    {githubUsername:'msami625', linkedinID: 'muhammad-sami-bhat'},
     { githubUsername: 'digvijaysinghh', linkedinID: 'digvijaysinghh'},
     { githubUsername: "chrishenderson07",linkedinID: "christopher-henderson-633495241"},
     { githubUsername:'Rythm18', linkedinID: 'ridham-khandar-a71841227'},
@@ -67,7 +68,7 @@ const profiles = [
     { githubUsername:'bkpecho', linkedinID: 'bkpecho'},
     { githubUsername: 'Amit41z', linkedinID: 'amit-kumar-ghosh-185165199' },
     { githubUsername:'SyedSumaimaly', linkedinID: 'syed-sumaim-al'},
-    { githubUsername:'SalamanderCtesiphon', linkedinID: 'shannon-brookshire-817577265'},
+		{ githubUsername:'SalamanderCtesiphon', linkedinID: 'shannon-brookshire-817577265'},
 
           // Add more profiles as needed
 
