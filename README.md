@@ -48,7 +48,7 @@
 - Star this repository
 
 
-## 📢 Do checkout [Task 2](https://github.com/Boltjazz/Hacktober23/tree/main/Task2)🐱‍🏍
+## 📢 [Do checkout Task 2](https://github.com/Boltjazz/Hacktober23/tree/main/Task2)🐱‍🏍
 
 - Read the md file for instructions , Enjoy the process.
 
