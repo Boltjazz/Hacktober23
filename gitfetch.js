@@ -65,6 +65,7 @@ const profiles = [
     { githubUsername:'bkpecho', linkedinID: 'bkpecho'},
     { githubUsername: 'Amit41z', linkedinID: 'amit-kumar-ghosh-185165199' },
     { githubUsername:'SyedSumaimaly', linkedinID: 'syed-sumaim-al'},
+	{ githubUsername: 'Narennnnn', linkedinID: 'narendra-maurya-01' },
           // Add more profiles as needed
 
 ];
