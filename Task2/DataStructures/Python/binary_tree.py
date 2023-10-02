@@ -54,7 +54,41 @@ class BinaryTree:
         else:
             print("Invalid direction. Please enter 'l' or 'r'.")
             self._insert(value, node)
-            
+    def _delete(self, value, node):
+        """
+        Helper method for deleting the node with the given value from the binary tree.
+
+        :param value: The value of the node to delete.
+        :param node: The current node being evaluated.
+        """
+        if node is None:
+            print(f"{value} not found in tree.")
+        elif value < node.value:
+            node.left = self._delete(value, node.left)
+        elif value > node.value:
+            node.right = self._delete(value, node.right)
+        else:
+            if node.left is None:
+                return node.right
+            elif node.right is None:
+                return node.left
+            else:
+                temp = self._find_min(node.right)
+                node.value = temp.value
+                node.right = self._delete(temp.value, node.right)
+        return node
+
+    def _find_min(self, node):
+        """
+        Helper method for finding the node with the minimum value in a subtree.
+
+        :param node: The root of the subtree to search.
+        :return: The node with the minimum value in the subtree.
+        """
+        while node.left is not None:
+            node = node.left
+        return node
+
     def traverse_inorder(self):
         """
         Traverses the binary tree in inorder.
@@ -91,5 +125,24 @@ if __name__ == "__main__":
 
         value = int(input("Enter the value of the node: "))
         tree.insert(value)
+
+    print("Inorder traversal:", tree.traverse_inorder())
+
+    while True:
+        choice = input("Do you want to delete a node? (y/n): ")
+        if choice.lower() == "n":
+            break
+
+        value = int(input("Enter the value of the node to delete: "))
+        node = tree.find(value)
+        if node is None:
+            print(f"{value} not found in tree.")
+        else:
+            confirm = input(f"Are you sure you want to delete {value}? (y/n): ")
+            if confirm.lower() == "y":
+                tree.delete(value)
+                print(f"{value} deleted from tree.")
+            else:
+                print(f"{value} not deleted from tree.")
 
     print("Inorder traversal:", tree.traverse_inorder())
