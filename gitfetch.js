@@ -11,6 +11,7 @@ const linkedinIcon = `
 `;
 // Function to add a user profile with GitHub username and LinkedIn ID
 function addProfile() {
+<<<<<<< HEAD
   const githubUsername = document.getElementById("githubUsername").value;
   const linkedinID = document.getElementById("linkedinID").value;
 
@@ -20,10 +21,22 @@ function addProfile() {
   } else {
     alert("Please enter both GitHub username and LinkedIn ID.");
   }
+=======
+    const githubUsername = document.getElementById("githubUsername").value;
+    const linkedinID = document.getElementById("linkedinID").value;
+
+    // Check if both GitHub username and LinkedIn ID are provided
+    if (githubUsername && linkedinID) {
+        fetchGitHubData(githubUsername, linkedinID);
+    } else {
+        alert("Please enter both GitHub username and LinkedIn ID.");
+    }
+>>>>>>> 6091d60cb14409f9a6c4b5af2799b7179c64bb89
 }
 
 // Function to fetch and display GitHub user data
 async function fetchGitHubData(username, linkedinID) {
+<<<<<<< HEAD
   try {
     const response = await fetch(`https://api.github.com/users/${username}`);
     if (!response.ok) {
@@ -37,6 +50,20 @@ async function fetchGitHubData(username, linkedinID) {
     card.innerHTML = `
             <img class="profile-pic" src="${
               data.avatar_url
+=======
+    try {
+        const response = await fetch(`https://api.github.com/users/${username}`);
+        if (!response.ok) {
+            throw new Error("GitHub API request failed");
+        }
+        const data = await response.json();
+
+        // Create a card for the user
+        const card = document.createElement("div");
+        card.className = "card";
+        card.innerHTML = `
+            <img class="profile-pic" src="${data.avatar_url
+>>>>>>> 6091d60cb14409f9a6c4b5af2799b7179c64bb89
             }" alt="Profile Picture">
             <div class="name">${data.name || username}</div>
             <div class="links">
@@ -44,15 +71,24 @@ async function fetchGitHubData(username, linkedinID) {
                 <a href="https://www.linkedin.com/in/${linkedinID}" target="_blank">${linkedinIcon}</a>
             </div>
         `;
+<<<<<<< HEAD
     document.getElementById("profileContainer").appendChild(card);
   } catch (error) {
     console.error(error);
     alert("Failed to fetch GitHub data for " + username);
   }
+=======
+        document.getElementById("profileContainer").appendChild(card);
+    } catch (error) {
+        console.error(error);
+        alert("Failed to fetch GitHub data for " + username);
+    }
+>>>>>>> 6091d60cb14409f9a6c4b5af2799b7179c64bb89
 }
 
 // : Fetch GitHub data for multiple usernames with LinkedIn IDs add your git hub username and linkedin user id
 const profiles = [
+<<<<<<< HEAD
   { githubUsername: "boltjazz", linkedinID: "boltjazz" },
   { githubUsername: "Ananyasingh2002", linkedinID: "ananya-singh-29b304224" },
   { githubUsername: "Rishabh0097", linkedinID: "rishabh-kumar-7a762928a" },
@@ -77,10 +113,38 @@ const profiles = [
     linkedinID: "shannon-brookshire-817577265",
   },
   { githubUsername: "akanshbende", linkedinID: "akansh-bende" },
+=======
+
+    { githubUsername: 'boltjazz', linkedinID: 'boltjazz' },
+    { githubUsername: 'Ananyasingh2002', linkedinID: 'ananya-singh-29b304224' },
+    { githubUsername: 'Rishabh0097', linkedinID: 'rishabh-kumar-7a762928a' },
+    { githubUsername: 'DomeT99', linkedinID: 'domenico-tenace' },
+    { githubUsername: 'adityagupta19', linkedinID: 'adityagupta11219' },
+    { githubUsername: 'msami625', linkedinID: 'muhammad-sami-bhat' },
+    { githubUsername: 'digvijaysinghh', linkedinID: 'digvijaysinghh' },
+    { githubUsername: "chrishenderson07", linkedinID: "christopher-henderson-633495241" },
+    { githubUsername: 'Rythm18', linkedinID: 'ridham-khandar-a71841227' },
+    { githubUsername: 'farukhfrk', linkedinID: 'mahammad-farukh-uddin-aa16381ba' },
+    { githubUsername: 'bkpecho', linkedinID: 'bkpecho' },
+    { githubUsername: 'Amit41z', linkedinID: 'amit-kumar-ghosh-185165199' },
+    { githubUsername: 'SyedSumaimaly', linkedinID: 'syed-sumaim-al' },
+    { githubUsername: 'SalamanderCtesiphon', linkedinID: 'shannon-brookshire-817577265' },
+    { githubUsername: 'nmnarora600', linkedinID: 'namanarora600' },
+    { githubUsername: 'Ravipandey24', linkedinID: 'ravi-pandey-610971183' },
+    { githubUsername: 'sophiya02', linkedinID: 'sophiya02' },
+    { githubUsername: 'darshitdudhaiya', linkedinID: 'darshitdudhaiya' },
+    { githubUsername: '27Shri03', linkedinID: 'shriram-bhardwaj-b08791220' },
+    // Add more profiles as needed
+
+>>>>>>> 6091d60cb14409f9a6c4b5af2799b7179c64bb89
 
   // Add more profiles as needed
 ];
 
 profiles.forEach((profile) => {
+<<<<<<< HEAD
   fetchGitHubData(profile.githubUsername, profile.linkedinID);
+=======
+    fetchGitHubData(profile.githubUsername, profile.linkedinID);
+>>>>>>> 6091d60cb14409f9a6c4b5af2799b7179c64bb89
 });
