@@ -88,6 +88,10 @@ const profiles = [
     githubUsername: "drifterDev",
     linkedinID: "mateo-álvarez-murillo-34679b259",
   },
+  {
+    githubUsername: "theharism",
+    linkedinID: "muhammad-haris-0b6a6b1b7",
+  },
 
   // Add more profiles as needed
 
