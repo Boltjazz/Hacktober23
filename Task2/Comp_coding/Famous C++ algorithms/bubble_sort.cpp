@@ -30,7 +30,7 @@ int main()
     cout << "Sorted array: \n";
 
     int i;
-    for (i = 0; i < size; i++)
+    for (i = 0; i < N; i++)
         cout << " " << arr[i];
 
     return 0;
