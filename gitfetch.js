@@ -56,6 +56,7 @@ const profiles = [
   { githubUsername: "boltjazz", linkedinID: "boltjazz" },
   { githubUsername: "Ananyasingh2002 ", linkedinID: "ananya-singh-29b304224" },
   { githubUsername: "Shambsri21", linkedinID: "savita-srivastava-9b81b3288" },
+  { githubUsername: "Saroj-Swadithya", linkedinID: "https://www.linkedin.com/in/sarojswadithyam/" },
   { githubUsername: "Rishabh0097", linkedinID: "rishabh-kumar-7a762928a" },
   { githubUsername: "DomeT99", linkedinID: "domenico-tenace" },
   { githubUsername: "adityagupta19", linkedinID: "adityagupta11219" },
