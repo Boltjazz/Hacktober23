@@ -1,0 +1,10 @@
+text = input("Enter the string: ").lower()
+vowels = sum(1 for a in text if a in 'aeiou')
+consonants = sum(1 for a in text if a.isalpha() and a not in 'aeiou')
+digits = sum(1 for a in text if a.isdigit())
+spaces = sum(1 for a in text if a.isspace())
+
+print("Vowels:", vowels)
+print("Consonants:", consonants)
+print("Digits:", digits)
+print("White spaces:", spaces)
